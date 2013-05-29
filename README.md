@@ -15,7 +15,3 @@ The installation script automates much of the work of deploying a basic site usi
 run after CE has been set up.  It is expected to be run from within an installation of CE.  The script will
 set up some blank, generic web pages that can be seen within the navigation menus.  It also sets up a number
 of content sections that are used to manage elements of the home page (slides, call out boxes, etc.).
-
-Professional Theme To Do:
-- add <h1>, <h2>, etc. styles to stylesheet
-- add default CE styles for channels
