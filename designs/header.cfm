@@ -1,14 +1,12 @@
 <!--- 
 Theme: 	Professional
 File: 	header.cfm
-Notes: 	This is a sample header file.  The header file file is generally called from head.cfm after the call to init.cfm.
+Notes: 	This is a sample header file.  The header file file is generally called from 
+		head.cfm after the call to init.cfm.
 --->
-<!--- DOCTYPE declaration - example provided --->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
 	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<!--- Add <html> tag --->
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
-	<!--- Add <head> section --->
 	<head>
 		<!--- Add any <meta> tags as necessary --->
 		<meta http-equiv="Content-type" content="text/html; charset=utf-8" />
@@ -39,8 +37,6 @@ Notes: 	This is a sample header file.  The header file file is generally called 
 		<![endif]-->
         <script src="http://cdn.jquerytools.org/1.2.7/full/jquery.tools.min.js"></script>
 	</head>
-    
-	<!--- Open <body> tag --->
 	<body >
 		<!-- HEAD META -->
 		<div class="metaBannerContain">
@@ -195,9 +191,9 @@ Notes: 	This is a sample header file.  The header file file is generally called 
 			<a class="home-slide-backward">back</a>
 			
 			<!-- container for the slides -->
-				<div class="home-slide-images">
-			<!-- first slide -->
-			
+			<div class="home-slide-images">
+
+			<!-- first slide -->			
 			<cfset slide1 = application.apiv1.sectionsapi.getContentSection("Slide 1")>
 			<cfoutput>
 			<cfif isDefined("slide1.query.content")>#slide1.query.content#</cfif>
